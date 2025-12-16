@@ -48,6 +48,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+//Run migrations at startup
+//dotnet ef database update
+
 // Mapeo de rutas (desde el archivo SurveyEndpoints.cs)
 app.MapSurveyRoutes();
 app.UseCors("AllowAngularDev");
