@@ -27,8 +27,7 @@ builder.Services.AddSwaggerGen(c =>
 
 
 // BD
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection")
-                    ?? "Host=localhost;Database=survey_app;Username=postgres;Password=admin2023";
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<SurveyDbContext>(options => options.UseNpgsql(connectionString));
 
 // Inyección de Dependencias (Servicios)
