@@ -2,9 +2,6 @@ using api_demo_test.Application;
 using api_demo_test.Data;
 using api_demo_test.Endpoints;
 using Microsoft.EntityFrameworkCore;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
