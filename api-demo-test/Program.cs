@@ -21,6 +21,7 @@ builder.Services.AddCors(options =>
 });
 
 // Configurar Swagger/OpenAPI
+// http://localhost:5237/swagger/index.html
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
